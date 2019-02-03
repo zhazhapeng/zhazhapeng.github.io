@@ -1,51 +1,100 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>my first git</title>
-		<style type="text/css">
-			*{
-				padding: 0;
-				margin: 0;
-			}
-			#mi{
-				position: relative;
-				width: 150px;
-				height: 300px;
-				border: 3px solid orange;
-				margin: 80px auto;
-				overflow: hidden;
-				/*��� ˭����˭�Ӽ��*/
-				transition: all 2s;
-				top: 0px;
-			}
-			#bot{
-				position: absolute;
-				width: 150px;
-				height: 80px;
-				background: orange;
-				top: 300px;
-				opacity: 0;
-				transition: all 1s;
-			}
-			#mi:hover{
-				top: -10px;	
-			}
-			#mi:hover #bot{
-				top: 220px;
-				opacity: 1;
-			}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-		</style>
-	</head>
-	
-	<body>
-		<div id="mi">
-			<div id="bot" class="bot n">
-			</div>
-			
-		</div>
-		
-		
-	</body>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="libs/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="qixi.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/animate.min.css"/>
+  <!-- Demo styles -->
+ 
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container">
+  	<img src="images/bgmBtn-fbd2dc.svg" id="music"  />
+  	<audio src="images/music.MP3"  id="music1"></audio>
+    <div class="swiper-wrapper">
+		<!--第一屏-->
+      <div class="swiper-slide one">
+      	<div class="top">
+      		<img src="images/one2.png" class="ani" swiper-animate-effect="swing" swiper-animate-duration="2s" swiper-animate-delay="0.8s"/>
+      		<span class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="3.1s">七</span>
+      		<span class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="3.5s">夕</span>
+      		<span class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="3.9s">最</span>
+      		<span class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="4.3s">美</span>
+      		<span class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="4.7s">情</span>
+      		<span class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="5.1s">话</span>
+      	</div>
+					<!--底部图-->
+      		<img src="images/one7.png" class="bot ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"/>
+      		
+      		<img src="images/one8.png" class="bot ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s"/>
+      		
+      		<img src="images/one4.png" class="bot ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s"/>
+      		
+      		<img src="images/one3.png" class="people ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.8s" swiper-animate-delay="1.2s"/>
+      		
+      		<img src="images/one5.png" class="bot ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="2.3s"/>
+      		
+      		<img src="images/one6.png" class="xin ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1.3s"/>
+      		
+      		<img src="images/9.png" class="sanxin ani" swiper-animate-effect="bounceInDown " swiper-animate-duration="1.2s" swiper-animate-delay="2.4s"/>
+      		
+      		
+      </div>
+      <!--第一屏结束-->
+      
+      <!--第二屏-->
+      <div class="swiper-slide two">
+      	
+      	<div class="top2">
+      		<img class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="2s" swiper-animate-delay="1s" src="images/two1.jpg"/>
+      		<span class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2.9s">"遇见你，</span>
+      		<br />
+      		<span class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3.3s">然后遇见了自己!"</span>
+      	</div>
+      	<!--后面的图片-->
+      	<img src="images/two3.jpg" class="people ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s"/>
+      	<img src="images/two4.jpg" class="small ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.8s" swiper-animate-delay="2.1s"/>
+      	<img src="images/two5.jpg" class="ice ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="1.4s"/>
+      	<img src="images/two6.jpg" class="love ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.8s" swiper-animate-delay="2.3s"/>
+      	<img src="images/two7.jpg" class="big ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.9s" swiper-animate-delay="3.3s"/>
+      	<img src="images/two8.jpg" class="tang ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="2.3s"/>
+      	
+      </div>
+      <!--第二屏结束-->
+     
+      <!--第三屏开始-->
+      <div class="swiper-slide three">
+      	
+      	 	<img src="images/three 2.jpg" class="ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s"/>
+      		<img src="images/three 1.jpg" class="ani" swiper-animate-effect="flash" swiper-animate-duration="1.5s" swiper-animate-delay="0.4s"/>
+      		<img src="images/three 3.jpg" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.4s"/>
+      		<img src="images/three 4.jpg" class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="2s" swiper-animate-delay="2.0s"/>
+     
+      	
+      </div>
+      
+      <!--第三屏结束-->
+      
+      
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="libs/swiper.min.js"></script>
+<script src="libs/swiper.animate1.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="libs/zepto.js" type="text/javascript" charset="utf-8"></script>
+<script src="libs/wcj.js" type="text/javascript" charset="utf-8"></script>
+
+
+  <!-- Initialize Swiper -->
+ 
+</body>
 </html>

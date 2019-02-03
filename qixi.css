@@ -1,0 +1,215 @@
+html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family:"微软雅黑" ;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+      
+    }
+    #music{
+    	position: fixed;
+    	left: 90%;
+    	top: 2%;
+    	width: 10%;
+    	z-index: 2;
+    	/*transition: all 2s;*/
+    	animation:r 2s linear infinite;
+    	animation-play-state: paused;
+		}
+		/*#music:hover{
+			transition: all 2s;
+    	animation: r 5s linear;
+		}*/
+		@keyframes r{
+			from{ 
+				transform: rotate(0);
+				}
+			to{
+				transform: rotate(360deg);
+			}
+		} 
+		
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    /*第一屏*/
+    .swiper-slide.one{
+    	background: url(images/one1.png) no-repeat;
+    	background-size: 100% 100%;
+    	position: relative;
+    }
+    .top{
+    	position: absolute;
+		left: 2%;
+		top: 5%;    	
+    }
+    .top img{
+    	position: relative;
+		width: 100%;
+		height: 100%;  
+		position: relative;  	
+    }
+    .top span{
+    	text-align: center;
+    	color: white;
+    	font-size: 20px;
+    	font: "新宋体";
+    	position: absolute;
+    	
+    }
+    .top span:nth-of-type(1){
+    	left: 20%;
+    	top: 40%;
+    }
+    .top span:nth-of-type(2){
+    	left: 31%;
+    	top: 23%;
+    }
+    .top span:nth-of-type(3){
+    	left: 42%;
+    	top: 9%;
+    }
+    .top span:nth-of-type(4){
+    	left: 54%;
+    	top: 10%;
+    }
+    .top span:nth-of-type(5){
+    	left: 65%;
+    	top: 24%;
+    }
+    .top span:nth-of-type(6){
+    	left: 75%;
+    	top: 40%;
+    }
+    .swiper-slide.one .bot{
+    	position: absolute;
+    	bottom: 0;
+    	left: 0;
+    	width: 100%;
+    }
+    .swiper-slide.one .people{
+    	position: absolute;
+    	bottom: 0;
+    	left: 21px;
+    	width: 77%;
+    }
+    .swiper-slide.one .xin{
+    	position: absolute;
+    	left: 2%;
+    	top: 41%;
+    }
+    .swiper-slide.one .sanxin{
+    	position: absolute;
+    	left: 30%;
+    	top: 29%;
+    	width: 62%;
+    }
+    /*.swiper-slide.one .music{
+    	position: fixed;
+    	left: 88%;
+    	top: 2%;
+    	width: 10%;
+    }*/
+   /*第一屏结束*/
+
+
+/*第二屏开始*/
+		.swiper-slide.two{
+    	background: url(images/one1.png) no-repeat;
+    	background-size: 100% 100%;
+    	position: relative;
+    }  
+		.swiper-slide.two .top2{
+			width: 100%;
+			/*border: 2px solid skyblue;*/
+		
+		}
+		.swiper-slide.two .top2 img{
+			width: 100%;
+		}
+		.swiper-slide.two .top2 span{
+				font-size: x-large;
+			color: white;
+		}
+		.swiper-slide.two .top2 span:nth-last-of-type(1){
+			position: absolute;
+			left: 17%;
+			top: 14%;
+		}
+		.swiper-slide.two .top2 span:nth-last-of-type(2){
+			position: absolute;
+			left: 11%;
+			top: 7%;
+		}
+		.swiper-slide.two .people{
+			position: absolute;
+			width: 75%;
+			bottom: 0;
+		}
+		.swiper-slide.two .ice{
+			position: absolute;
+			width: 20%;
+			left: 78%;
+			top: 75%;
+		}
+		.swiper-slide.two .small{
+			position: absolute;
+			width: 33%;
+			left: 87%;
+			top: 66%;
+		}
+		.swiper-slide.two .love{
+			position: absolute;
+			width: 26%;
+			left: 76%;
+			top: 69%;
+		}
+		.swiper-slide.two .tang{
+			position: absolute;
+			width: 30%;
+			left: 66%;
+			top: 11%;
+		}
+		
+/*第二屏结束*/
+/*第三屏开始*/
+.swiper-slide.three{
+    	background: url(images/three0.png) no-repeat;
+    	background-size: 100% 100%;
+    	position: relative;
+    	
+    }  
+    
+    .swiper-slide.three img:nth-of-type(1){
+    	position: absolute;
+    	height: 26%;
+    	width: 91%;
+    	left: 6%;
+    	top: 68%;
+    }
+ .swiper-slide.three img:nth-of-type(2){
+    	position: absolute;
+    	height: 18%;
+    	width: 83%;
+    	left: 10%;
+    	top: 21%;
+    }
+.swiper-slide.three img:nth-of-type(3){
+    	position: absolute;
+    	left: 20%;
+    	top: 57%;
+    }
+.swiper-slide.three img:nth-of-type(4){
+    	position: absolute;
+    	left: 38%;
+    	top: 40%;
+    }
+
+
+/*第三屏结束*/
